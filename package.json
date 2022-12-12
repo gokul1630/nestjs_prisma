@@ -21,7 +21,8 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "db:stop":"docker compose rm dev-db -f -s -v",
     "db:start":"docker compose up dev-db -d",
-    "db:restart":"yarn db:stop && yarn db:start"
+    "db:restart":"yarn db:stop && yarn db:start",
+    "prisma:migrate":"prisma migrate deploy"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
